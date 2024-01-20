@@ -16,7 +16,7 @@ const MapComponent = ({ img, lat, lng }) => {
   useEffect(() => {
     const fetchStops = async () => {
       try {
-        const apiUrl = 'http://api-bus-opendata.mirenk.net/api/stops/';
+        const apiUrl = 'https://api-bus-opendata.mirenk.net/api/stops/';
         const response = await fetch(apiUrl);
 
         if (!response.ok) {
@@ -77,7 +77,7 @@ const MapComponent = ({ img, lat, lng }) => {
 
   const handleCardClick = async (routeId) => {
     try {
-      const apiUrl = `http://localhost:8000/api/get_stop_id/${routeId}`;
+      const apiUrl = `https://api-bus-opendata.mirenk.net/api/get_stop_id/${routeId}`;
       const response = await fetch(apiUrl);
   
       if (!response.ok) {
