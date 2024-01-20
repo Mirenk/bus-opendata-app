@@ -16,7 +16,7 @@ const MapComponent = ({ img, lat, lng }) => {
   useEffect(() => {
     const fetchStops = async () => {
       try {
-        const apiUrl = 'https://api.bus-opendata.mirenk.net/api/stops/';
+        const apiUrl = 'http://api-bus-opendata.mirenk.net/api/stops/';
         const response = await fetch(apiUrl);
 
         if (!response.ok) {

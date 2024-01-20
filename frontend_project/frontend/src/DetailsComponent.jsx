@@ -86,7 +86,7 @@ const DetailsComponent = ({ selectedStopId, onCardClick }) => {
   useEffect(() => {
     const fetchStopDetails = async () => {
       try {
-        const apiUrl = `https://api.bus-opendata.mirenk.net/api/get_bus_info/${selectedStopId}`;
+        const apiUrl = `https://api-bus-opendata.mirenk.net/api/get_bus_info/${selectedStopId}`;
         const response = await fetch(apiUrl);
   
         if (!response.ok) {
