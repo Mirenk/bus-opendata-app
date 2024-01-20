@@ -153,8 +153,10 @@ elif platform.system() == 'Linux' and platform.machine() == 'aarch64':
     GDAL_LIBRARY_PATH = '/lib/aarch64-linux-gnu/libgdal.so.32'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost:8000",
+    "http://localhost:3002",
+    "http://localhost:8002",
+    "https://bus-opendata.mirenk.net",
+    "https://api.bus-opendata.mirenk.net",
 ]
 
 CORS_ALLOW_HEADERS = (

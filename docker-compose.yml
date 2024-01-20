@@ -9,7 +9,7 @@ services:
 
     container_name: django
     ports:
-      - "8000:8000"
+      - "8002:8000"
 
     tty: true
     command: python3 /backend/manage.py runserver 0.0.0.0:8000
@@ -25,7 +25,7 @@ services:
 
     container_name: react
     ports:
-      - "3000:3000"
+      - "3002:3000"
 
     tty: true
 
